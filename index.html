@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!---->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="icon" href="./assets/images/favicon-32x32.png">
+    <title>News HomePage</title>
+    <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+   <header class="container-lg mt-5 mb-3">
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.svg" alt=".W">
+            </a>
+            
+            <input type="image" 
+                class="d-sm-none border-0"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas"
+                src="./assets/images/icon-menu.svg"
+            >
+
+            <div class="offcanvas offcanvas-end w-75 " id="offcanvas">
+                <div class="offcanvas-header mb-5 ms-auto">
+                    <input data-bs-target="#offcanvas" data-bs-dismiss="offcanvas" type="image" src="./assets/images/icon-menu-close.svg" >
+                </div>
+                
+                <ul class="offcanvas-body navbar-nav justify-content-sm-end">
+                    <li class="nav-item"><a href="#" class="nav-link fw-sm-bold">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">New</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+                </ul>
+            </div>
+        </nav>
+   </header>
+   
+   <main class="container-lg">
+        <div class="row gap-4">
+            <!-- The main section -->
+            <section class="col-lg-8 ">
+                <div class="mb-4">
+                    <picture >
+                        <source media="(max-width: 700px)" srcset="assets/images/image-web-3-mobile.jpg">
+                        <source media="(min-width: 700px)" srcset="assets/images/image-web-3-desktop.jpg">
+                        <img class="w-100" src="./assets/images/image-web-3-mobile.jpg" alt="web 3">
+                    </picture>
+                </div>
+                
+                <div class="row">
+                    
+                    <h1 class="col-lg bright-future ">The Bright Future of Web 3.0 ?</h1>
+                    <div class="col-lg">
+                        <p> 
+                            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                            But is it really fulfilling its promise?
+                        </p>
+                        <button class="btn-custom px-4 fw-bold fs-5 mt-2 text-uppercase font-monospace">Read more</button>    
+                    </div>
+                </div>
+            </section>
+
+            <!-- ASIDE  -->
+            <aside class="col-lg text-light bg-dark p-3 d-flex flex-column">
+                <h2 class="text-warning fw-bolder">New</h2>
+                <p>
+                    <h3 class="fs-6 fw-bold"><a href="#">Hydrogen vs Electric Cars</a></h3>
+                    <p class="opacity-75">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </p>
+
+                <hr>
+
+                <p>
+                    <h3 class="fs-6 fw-bold"><a href="#">The Downsides of AI Artistry </a></h3>
+                    <p class="opacity-75">What are the possible adverse effects of on-demand AI image generation?</p>
+                </p>
+                
+                <hr>
+
+                <p>
+                    <h3 class="fs-6 fw-bold"><a href="#">Is VC Funding Drying Up?</a></h3>
+                    <p class="opacity-75">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </p>
+                
+            </aside>
+        </div>
+
+        <!-- Other articles -->
+        <section class="container row mt-5 gap-2" >
+            <article class="col-xl card">
+                <div class="row g-0">
+                    <div class="col-4 ">
+                        <img class="img-fluid float-start" src="assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+                    </div>
+                    
+                    
+                    <div class="col-8 card-body">
+                        <h4 class="card-title fw-bolder text-secondary opacity-50">01</h4>
+                        <a href="#" class="card-text fw-bold">Reviving Retro PCs</a>
+                        <p class="card-text opacity-75">What happens when old PCs are given modern upgrades?</p>    
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-xl card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img class="img-fluid " src="assets/images/image-top-laptops.jpg" alt="TOP 10 Laptops">
+                    </div>
+    
+                    <div class="col-8 card-body">
+                        <h4 class="card-title fw-bolder text-secondary opacity-50">02</h4>
+                        <a href="#" class="card-text fw-bold">Top 10 Laptops of 2022</a>
+                        <p class="card-text opacity-75">Our best picks for various needs and budgets.</p>    
+                    </div>
+    
+                </div>
+            </article>
+
+            <article class="col-xl card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img class="img-fluid " src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+                    </div>
+    
+                    <div class="col-8 card-body">
+                        <h4 class="card-title fw-bolder text-secondary opacity-50">03</h4>
+                        <a href="#" class="card-text fw-bold">The Growth of Gaming</a>
+                        <p class="card-text opacity-75">How the pandemic has sparked fresh opportunities.</p>    
+                    </div>
+    
+                </div>
+            </article>
+        </section>
+        
+   </main>
+</body>
+</html>

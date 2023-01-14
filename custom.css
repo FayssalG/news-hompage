@@ -1,0 +1,63 @@
+:root{
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue : hsl(240, 100%, 5%);
+
+    --bs-body-font-family : 'Inter' ,sans-serif ;
+}
+
+/* increasing font size for nav items on small screens */
+@media (max-width:575px) {
+    .nav-item{
+        font-size: 1.4rem !important;
+    }
+    
+}
+
+/* The main big header */
+.bright-future{
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+}
+
+/* setting font size for paragraphs*/
+
+article p , aside p{
+    font-size: .9rem;
+}
+
+/* Removing default border from cards*/
+.card{
+    border: none !important;
+}
+
+/* articles and news links hoover effects */
+a.card-text , aside a{
+    color: unset;
+    text-decoration: none;
+}
+a.card-text:hover , aside  a:hover{
+    color: var(--soft-red);
+}
+/* */
+
+
+/* BUTTON */
+.btn-custom{
+    color: white;
+    border: none;
+    padding: 0.2em 1.5em ;
+    background-color: var(--soft-red) !important;
+    border-radius: 0 !important;
+    transition: background-color 400ms ease;
+}
+
+.btn-custom:hover{
+    background-color: var(--very-dark-blue) !important;
+}
+
+
